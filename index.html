@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="C:\xampp\htdocs\uts_pibs\WhatsApp Image 2024-10-20 at 21.43.01.jpeg" alt="Foto Profil" class="profile-pic">
+        <h1>Profil Ramadhan Alvito Alfian</h1>
+    </header>
+
+    <nav>        
+        <ul>
+            <li><button onclick="showContent('biodata')" class="button">Biodata</button></li><br>
+            <li><button onclick="showContent('pendidikan')" class="button" >Pendidikan</button></li><br>
+            <li><button onclick="showContent('pengalaman')" class="button">Pengalaman</button></li><br>
+            <li><button onclick="showContent('keahlian')" class="button">Keahlian</button></li><br>
+            <li><button onclick="showContent('publikasi')" class="button">Publikasi</button></li><br>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="biodata" class="content" style="display: block;">
+            <h2>Biodata</h2><br>
+            <p><strong>NIM:</strong> 2023081006</p><br>
+            <p><strong>Nama:</strong> Ramadhan Alvito Alfian</p><br>
+            <p><strong>Agama:</strong> Islam</p><br>
+            <p><strong>Tanggal Lahir:</strong> 16 Oktober 2005</p><br>
+            <p><strong>Tempat Lahir:</strong> Jakarta</p><br>
+        </div>
+
+        <div id="pendidikan" class="content" style="display: none;">
+            <h2>Pendidikan</h2><br>
+            <p> - SD Waskito  (2011-2016)</p><br>
+            <p> - SMP Waskito (2017-2019)</p><br>
+            <p> - SMK Letris 2 (2020-2023)</p><br>
+        </div>
+
+        <div id="pengalaman" class="content" style="display: none;">
+            <h2>Pengalaman</h2><br>
+            <p> - PKL di satpol pp tangsel (2022-2023)</p><br>
+            <p> - Mengikuti Internasional Course (2023-2024)</p><br>
+        </div>
+
+        <div id="keahlian" class="content" style="display: none;">
+            <h2>Keahlian</h2><br>
+            <p> - Pemrograman Web</p><br>
+            <p> - Editing Video</p><br>
+            <p> - Database Administration</p><br>
+        </div>
+
+        <div id="publikasi" class="content" style="display: none;">
+            <h2>Publikasi</h2><br>
+            <p> - "Virus Trojan, Ancaman Siber yang Terus Meningkat", Artikel Indonesiana.id, 2023</p><br>
+        </div>
+    </section>
+
+    <aside>
+        <h3>Hobi</h3><br>
+        <ul>
+            <li>Bermain Game</li><br>
+            <li>Riding Motor</li><br>
+            <li>Pemrograman</li><br>
+        </ul>
+    </aside>
+
+    <footer>
+        <div class="footer-left">
+            <p>Youtube: <a href="https://youtube.com/@alvitoalfian191?si=aEnNoNe7czhXzC18">@alvitoalfian191</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/rmdhnalvit/">@rmdhnalvit</a></p>
+            <p>WhatsApp: 0882-1152-4295</p>
+        </div>
+        <div class="footer-center">
+            <p>&copy; Copyright 2024. All Rights Reserved</p>
+        </div>
+        <div class="footer-right">
+            <p>Profil Mahasiswa</p>
+            <small>Bersatu kita teguh, Bergerak kita runtuh</small>
+        </div>
+    </footer>
+
+    <script>
+        function showContent(contentId) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none'; // Sembunyikan semua konten
+            });
+            document.getElementById(contentId).style.display = 'block'; // Tampilkan konten yang dipilih
+        }
+    </script>
+    
+</body>
+</html>
